@@ -13,8 +13,14 @@ class Building {
 			throw new TypeError('must be number');
 		}
 	}
-	evacuationWarningMessage () {
+	evacuationWarningMessage() {
 		throw new Error('Class extending Building must override evacuationWarningMessage');
+	}
+}
+class test extends Building {
+	constructor(sqft) {
+		super(sqft);
+		this.evacuationWarningMessage();
 	}
 }
 export default Building;
