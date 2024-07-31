@@ -14,4 +14,18 @@ interface printTeacherFunction {
   }
 const printTeacher: printTeacherFunction = (firstName: string, lastName: string) => {
     return `${firstName.charAt(0)}. ${lastName}`;
-};
+    };    
+class StudentClass {
+    private firstname: string;
+    private lastname: string;
+    constructor (firstName: string,lastName: string) {
+      this.firstname = firstName;
+      this.lastname = lastName;
+    }
+    public workOnHomewor() {
+      return ('Currently working');
+    }
+    public displayName() {
+      return (this.firstname);
+    }
+  };
