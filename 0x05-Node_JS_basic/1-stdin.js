@@ -6,7 +6,7 @@ const rl = readline.createInterface({
 });
 rl.on('line', (input) => {
 	console.log('Your name is:', input);
-	//rl.close();
+	rl.close();
 });
 rl.on('close', () => {
 	console.log("This important software is now closing");
